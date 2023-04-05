@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quizz em JS!</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <h1 id="main-title">Quizz de programação!</h1>
+    <div id="score-container" class="hide">
+        <h2>Parabéns!</h2>
+        <p id="display-score"><span>90</span>%</p>
+        <p>Você acertou <span id="correct-answers">0</span> de <span id="questions-qty">10</span> perguntas.</p>
+        <button id="restart">Refazer quizz!</button>
+    </div>
+    <div id="quizz-container">
+        <p id="question"><span id="question-number">1</span> - <span id="question-text">Qual é a unidade de medida para metros?</span></p>
+        <div id="answers-box"></div>
+    </div>
+
+    <!-- TEMPLATE RESPOSTA -->
+    <button class="answer-template hide"><span class="btn-letter"></span> <span class="question-answer"></span></button>
+</body>
+</html>
